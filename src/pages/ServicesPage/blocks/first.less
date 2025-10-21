@@ -1,0 +1,76 @@
+@import '../../../reset.less';
+.first_service{
+    width: 100%;
+    height: calc(100svh - 65px);
+    background: rgba(16, 144, 203, 0.1);
+    display: flex;
+    align-items: center;
+    .container{
+        width: 1100px;
+        margin: 0 auto;
+        .flex_center;   
+        .advertisement{
+            width: 400px;
+            text-align: center;
+            .flex_center;
+            flex-direction: column;
+            img{
+                width: 70px;
+                
+            }
+            div{
+                width: 100px;
+                margin-bottom: 20px;
+                background: rgb(255, 255, 255);
+                border-radius: 50px;
+                padding: 10px;
+            }
+            p{
+                .txt;
+            }
+            h2, span{
+                font-size: 40px;
+                font-weight: 600;
+                margin-bottom: 20px;
+            }
+            span{
+                color: #108EC9;
+            }
+        }
+        .service{
+            width: 1100px;
+            margin: 0 auto;
+            position: absolute;
+            display: flex;
+            border-radius: 10px;
+            box-shadow: 0px 4px 114px 0px rgba(0, 0, 0, 0.09);
+            background: rgb(255, 255, 255);
+            padding: 30px;
+            bottom: -140px;
+            aside{
+                width: 100%;
+                &:nth-child(1){
+                    border-right: 0.7px solid rgb(210, 210, 210);
+                }
+                div{
+                    display: flex;
+                    margin-bottom: 20px;
+                    padding: 10px;
+                    img{
+                        margin-right: 20px;
+                    }
+                    h3{
+                        font-size: 20px;
+                        font-weight: 500;
+                    }
+                    p{
+                        .txt;
+                    }
+                    &:nth-child(1){
+                        border-bottom: 0.7px solid rgb(210, 210, 210);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+[
+    {
+        "img": "../../../../public/John.svg",
+        "activity": "CEO",
+        "name": "John Kabras"
+    },
+    {
+        "img": "../../../../public/John.svg",
+        "activity": "COO",
+        "name": "Philips shene moris"
+    },
+    {
+        "img": "../../../../public/John.svg",
+        "activity": "Tech Lead",
+        "name": "Equarn shamir  mohomad"
+    },
+    {
+        "img": "../../../../public/John.svg",
+        "activity": "Head of UX",
+        "name": "Janka indrajith"
+    },
+    {
+        "img": "../../../../public/John.svg",
+        "activity": "CEO",
+        "name": "John Kabras"
+    },
+    {
+        "img": "../../../../public/John.svg",
+        "activity": "COO",
+        "name": "Philips shene moris"
+    }
+]

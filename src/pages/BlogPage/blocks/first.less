@@ -1,0 +1,132 @@
+@import '../../../reset.less';
+.blog_first{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px;
+    padding-bottom: 300px;
+    .container{
+        width: 1100px;
+        margin: 0 auto;
+        text-align: center;
+        h2, span{
+            font-size: 40px;
+            font-weight: 600;
+            margin-bottom: 40px;
+        }
+        p{
+            .txt;
+            margin-bottom: 50px;
+        }
+        span{
+            color: #108EC9;
+        }
+        form{
+            width: 400px;
+            margin: 0 auto;
+            margin-bottom: 50px;
+            input{
+                width: 100%;
+                outline: none;
+                border-radius: 10px;
+                background: rgb(241, 241, 241);
+                padding: 12px;
+            }
+        }
+    }
+    .found_card{
+        width: 1100px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        display: flex;
+        aside{
+            h2{
+                font-size: 25px;
+                font-weight: 600;
+                margin-bottom: 30px;
+            }
+            p{
+                .txt;
+                margin-bottom: 16px;
+            }
+            article{
+                width: 100%;
+                .flex_between;
+                button{
+                    color: rgb(16, 144, 203);
+                    background: none
+                }
+                div{
+                    .flex_between;
+                    nav{
+                        h3{
+                            font-size: 16px;
+                        }
+                        p{
+                            .txt;
+                        }
+                    }
+                }
+            }
+            &:nth-child(1){
+                width: 400px;
+                margin-right: 40px;
+            }
+            &:nth-child(2){
+                width: 500px;
+            }
+        }
+    }
+    .table{
+        width: 1100px;
+        margin: 0 auto;
+        .column{
+            width: 100%;
+            .flex_between;
+            margin-bottom: 80px;
+            .tabs{
+                width: 80px;
+                text-align: center;
+                padding: 10px;
+                background: #108EC9;
+                border-radius: 50px;
+                .txt;
+                color: white;
+            }
+        }
+        .row{
+            width: 100%;
+            .allCards{
+                width: 100%;
+                .flex_between;
+                flex-wrap: wrap;
+                div{
+                    width: 350px;
+                    margin-bottom: 20px;
+                    h2{
+                        font-size: 23px;
+                        font-weight: 600;
+                        margin-bottom: 10px;
+                    }
+                    p{
+                        .txt;
+                        margin-bottom: 20px;
+                    }
+                    h3{
+                        font-weight: 600;
+                    }
+                    nav{
+                        display: flex;
+                        img{
+                            margin-right: 20px;
+                        }
+                        article{
+                            padding-top: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+@import './../../../reset.less';
+
+.first{
+    width: 100%;
+    height: calc(100svh - 65px);
+    background: rgba(16, 144, 203, 0.1);
+    display: flex;
+    align-items: center;
+    .container{
+        width: 1100px;
+        margin: 0 auto;
+        .flex_between;
+        aside{
+            width: 600px;
+            h2{
+                font-size: 40px;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+            span{
+                color: #108EC9;
+                font-size: 40px;
+                font-weight: 600;
+            }
+            p{
+                .txt;
+                margin-bottom: 30px;
+            }
+            button{
+                .txt;
+                color: white;
+                padding: 10px 30px;
+                border-radius: 10px;
+                background: rgb(16, 144, 203);  
+            }
+            &:last-child{
+                text-align: center;    
+                img{
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
