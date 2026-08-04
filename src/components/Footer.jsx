@@ -5,7 +5,7 @@ function Footer(){
         <footer>
             <div className="container">
                 <nav>
-                    <img src={logo} alt="" />
+                    <a href="/mixProject/"><img src={logo} alt="logo" loading='lazy'/></a>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
                     <p>@Lorem</p>
                 </nav>

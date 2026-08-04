@@ -21,14 +21,14 @@ function FifthBlock(){
             <div className="container">
                 <h2>You will be in good Company</h2>
                 <Slider {...settings}>
-                    <div><img src={Bene} alt="" /></div>
-                    <div><img src={Caspio} alt="" /></div>
-                    <div><img src={Hyper} alt="" /></div>
-                    <div><img src={Leot} alt="" /></div>
-                    <div><img src={Bene} alt="" /></div>
-                    <div><img src={Caspio} alt="" /></div>
-                    <div><img src={Hyper} alt="" /></div>
-                    <div><img src={Leot} alt="" /></div>
+                    <div><img src={Bene} alt="Bene" loading="lazy"/></div>
+                    <div><img src={Caspio} alt="Caspio" loading="lazy"/></div>
+                    <div><img src={Hyper} alt="Hyper" loading="lazy"/></div>
+                    <div><img src={Leot} alt="Leot" loading="lazy"/></div>
+                    <div><img src={Bene} alt="Bene" loading="lazy"/></div>
+                    <div><img src={Caspio} alt="Caspio" loading="lazy"/></div>
+                    <div><img src={Hyper} alt="Hyper" loading="lazy"/></div>
+                    <div><img src={Leot} alt="Leot" loading="lazy"/></div>
                 </Slider>
             </div>
         </main>

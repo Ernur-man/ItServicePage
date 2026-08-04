@@ -11,7 +11,6 @@ export default function ServicesPage(){
             <SecondBlock/>
             <ThirdBlock/>
             <Subscribe/>
-            <Postblock text="Service"/>
         </>
     )
 }

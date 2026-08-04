@@ -3,10 +3,10 @@ import 'lightgallery/css/lg-zoom.css';
 import 'lightgallery/css/lg-thumbnail.css'
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import LightGallery from 'lightgallery/react';
-import meet from '../../../../public/meeting.svg'
-import check from '../../../../public/check.svg'
-import discuss from '../../../../public/discuss.svg'
-import clas from '../../../../public/class.svg'
+import meet from '/meeting.svg'
+import check from '/check.svg'
+import discuss from '/discuss.svg'
+import clas from '/class.svg'
 import './first.less'
 
 export default function AboutPage(){
@@ -20,10 +20,10 @@ export default function AboutPage(){
                     speed={500}
                     plugins={[lgThumbnail]}>
                     <a href={clas}>
-                        <img src={clas} alt="" />
+                        <img src={clas} alt="class image" loading="lazy"/>
                     </a>
                     <a href={meet}>
-                        <img src={meet} alt="" />
+                        <img src={meet} alt="meeting image" loading="lazy"/>
                     </a>
                     <a href='#'>
                         <div>
@@ -33,10 +33,10 @@ export default function AboutPage(){
                         </div>
                     </a>
                     <a href={discuss}>
-                        <img src={discuss} alt="" />
+                        <img src={discuss} alt="discuss image" loading="lazy"/>
                     </a>
                     <a href={check}>
-                        <img src={check} alt="" />
+                        <img src={check} alt="check image" loading="lazy"/>
                     </a>
                 </LightGallery>
             </div>

@@ -6,8 +6,9 @@ import 'lightgallery/css/lg-zoom.css';
 import 'lightgallery/css/lg-thumbnail.css'
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import SecondBlock from "./blocks/SecondBlock";
-import ThirdBlock from "./blocks/ThirdBlock";
+import FourthBlock from "./blocks/Fourth";
 import Postblock from "../../components/Postblock"
+import ThirdBlock from "./blocks/ThirdBlock";
 
 export default function AboutPage(){
     const onInit = () => {
@@ -18,8 +19,9 @@ export default function AboutPage(){
             <FirstBlock/>
             <SecondBlock/>
             <ThirdBlock/>
+            <FourthBlock/>
             <Subscribe/>
-            <Postblock text="About"/>
+            {/* <Postblock text="About"/> */}
         </>
     )
 }

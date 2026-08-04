@@ -1,24 +1,24 @@
-import './SecondBlock.less' 
+import './SecondBlock.less'
 
 function SecondBlock(){
     const services_list = [
         {
-            imgSrc: '../../../../public/services_icon.svg',
+            imgSrc: 'services_icon.svg',
             name: "Web Application",
             desc: "lorem ipsum is simlpy"
         },
         {
-            imgSrc: '../../../../public/services_icon.svg',
+            imgSrc: 'services_icon.svg',
             name: "Web Application",
             desc: "lorem ipsum is simlpy"
         },
         {
-            imgSrc: '../../../../public/services_icon.svg',
+            imgSrc: 'services_icon.svg',
             name: "Web Application",
             desc: "lorem ipsum is simlpy"
         },
         {
-            imgSrc: '../../../../public/services_icon.svg',
+            imgSrc: 'services_icon.svg',
             name: "Web Application",
             desc: "lorem ipsum is simlpy"
         }
@@ -30,7 +30,7 @@ function SecondBlock(){
                 {services_list.map((el, i)=>(
                     <nav key={i}>
                         <aside>
-                            <img src={el.imgSrc} alt={el.name} />
+                            <img src={el.imgSrc} alt={el.name} loading="lazy"/>
                         </aside>
                         <div>
                             <h4>{el.name}</h4>

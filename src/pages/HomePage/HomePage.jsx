@@ -1,11 +1,4 @@
-// import Inform from "../../components/Inform"
-// import Postblock from "../../components/Postblock"
-// import Subscribe from "../../components/Subscribe"
-// import FifthBlock from "./blocks/FifthBlock"
-// import FirstBlock from "./blocks/FirstBlock"
-// import FourthBlock from "./blocks/FourthBlock"
 
-// import SecondBlock from "./blocks/SecondBlock"
 
 import { Suspense } from "react"
 import { lazy } from "react"
@@ -23,7 +16,7 @@ function HomePage(){
             <Suspense fallback={<div>Loading...</div>}>
                 <FirstBlock/>
             </Suspense>
-            <Suspense fallback={<div>Loading...</div>}> 
+            <Suspense fallback={<div>Loading...</div>}>
                 <SecondBlock/>
             </Suspense>
             <Suspense fallback={<div>Loading...</div>}>

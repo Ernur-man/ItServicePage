@@ -1,12 +1,16 @@
 import { useState } from 'react'
-import data from '../../news.json'
 import './testblock.less'
+import axios from 'axios';
 
 export default function TestBlock(){
+    const [data, setData] = useState([]);
     const categories = Object.keys(data)
     const [activeTab, setActiveTab] = useState(categories[0])
-    
 
+
+    axios.get("news.json")
+    .then((res)=>setData(res.data))
+    .catch((e)=>alert('Error: ', e))
     return(
         <main className='test'>
             <div className="container">

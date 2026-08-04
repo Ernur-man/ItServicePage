@@ -6,7 +6,6 @@ export default function ContactPage(){
         <>
             <FirstBlock/>
             <SecondBlock/>
-            <Postblock text="Contact"/>
         </>
     )
 }

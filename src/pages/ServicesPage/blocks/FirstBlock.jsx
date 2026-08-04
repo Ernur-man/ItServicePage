@@ -1,8 +1,8 @@
 import './first.less'
 import { useState } from 'react'
-import speak from '../../../../public/speaker.svg'
-import logo from '../../../../public/caspio.svg'
-import phone from '../../../../public/phoone.svg'
+import speak from '/speaker.svg'
+import logo from '/caspio.svg'
+import phone from '/phoone.svg'
 export default function FirstBlock(){
     const [image, setImage] = useState(speak)
     function changeImage(){
@@ -16,7 +16,7 @@ export default function FirstBlock(){
             <div className="container">
                 <article className='advertisement'>
                     <div>
-                        <img src={image} alt="" onMouseMove={changeImage} onMouseLeave={returnImage}/>
+                        <img src={image} alt="logo image" onMouseMove={changeImage} onMouseLeave={returnImage} loading='lazy'/>
                     </div>
                     <h2>Our <span>Services</span></h2>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
@@ -24,14 +24,14 @@ export default function FirstBlock(){
                 <article className='service'>
                     <aside>
                         <div>
-                            <img src={phone} alt="" />
+                            <img src={phone} alt="phone" loading='lazy' />
                             <nav>
                                 <h3>Mobile Applications</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, nulla.</p>
                             </nav>
                         </div>
                         <div>
-                            <img src={phone} alt="" />
+                            <img src={phone} alt="phone" loading='lazy' />
                             <nav>
                                 <h3>SEO</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -40,14 +40,14 @@ export default function FirstBlock(){
                     </aside>
                     <aside>
                         <div>
-                            <img src={phone} alt="" />
+                            <img src={phone} alt="phone" loading='lazy' />
                             <nav>
                                 <h3>Web Application</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, nulla.</p>
                             </nav>
                         </div>
                         <div>
-                            <img src={phone} alt="" />
+                            <img src={phone} alt="phone" loading='lazy' />
                             <nav>
                                 <h3>AR/VR Solutions</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>

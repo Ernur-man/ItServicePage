@@ -6,6 +6,7 @@ function Subscribe() {
     const [mail, setMail] = useState('')
     const [modal, setModal] = useState(false)
     const [dat, setData] = useState([])
+    const [exist, setExist] = useState(false)
     const [styleModal, setStyleModal] = useState({
         position: 'absolute',
         right: 0,
@@ -18,7 +19,7 @@ function Subscribe() {
     })
 
     useEffect(() => {
-        axios.get('./mails.json')
+        axios.get('mails.json')
             .then((response) => setData(response.data))
             .catch(error => console.error(error))
     }, [])
@@ -26,25 +27,25 @@ function Subscribe() {
     function checkMails(e){
         e.preventDefault()
         const exists = dat.some(t => t.mail === mail)
-        if(!exists){
-            setModal(true)
-            setStyleModal((prev)=>({...prev, display: 'block', opacity: 0}))
-            
-            setTimeout(()=>{
-                setStyleModal((prev)=>({...prev, opacity: 1}))
-            },50)
-            
-            setTimeout(()=>{
-                setStyleModal((prev)=>({...prev, opacity: 0}))
-            },2000)
+        if(exists){
 
-            setTimeout(()=>{
-                setModal(false)
-            },3000)
+            setExist(true)
         }
-        else{
+        setModal(true)
+        setStyleModal((prev)=>({...prev, display: 'block', opacity: 0}))
+
+        setTimeout(()=>{
+            setStyleModal((prev)=>({...prev, opacity: 1}))
+        },50)
+
+        setTimeout(()=>{
+            setStyleModal((prev)=>({...prev, opacity: 0}))
+        },2000)
+
+        setTimeout(()=>{
             setModal(false)
-        }
+            setMail('')
+        },3000)
     }
 
 
@@ -64,7 +65,7 @@ function Subscribe() {
                 {
                     modal && (
                         <div style={styleModal} className='modal_error'>
-                            <h2>Undefined</h2>
+                            <h2>{exist ? 'Success' : 'Undefined'}</h2>
                         </div>
                     )
                 }

@@ -1,41 +1,48 @@
 import './third.less'
-import { useState, useEffect } from 'react'
-import pers from '../../../../public/John.svg'
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
+import { Link } from 'react-router-dom'
+import {
+    Rocket,
+    Smartphone,
+    LayoutGrid,
+    Cloud,
+} from "lucide-react";
 
 export default function ThirdBlock(){
-    const [data, setData] = useState([])
-    const settings = {
-        autoplay: true,
-        infinite: true,
-        dots: true,
-        speed: 500,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        arrows: false,
-        pauseOnHover: false
-    };
-    useEffect(()=>{
-        fetch('./data.json')
-            .then((response)=>response.json())
-            .then(dat=>setData(dat))
-    },[])
     return(
         <main className='third_about'>
             <div className="container">
-                        <Slider {...settings}> 
-                                {
-                                    data.map((el, i)=>(
-                                            <div href={pers} key={i}>
-                                                <img src={el.img} alt="" />
-                                                <p>{el.activity}</p>
-                                                <h3>{el.name}</h3>
-                                            </div>
-                                    ))
-                                }
-                        </Slider>
+                <aside>
+                    <h3>Lorem Ipsum is simply dummy text of the printing. </h3>
+                    <p>KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web applications and website builders measuring dozens of completed projects.</p>
+                    <Link to='/mixProject/contact' className='btn'>Contact Us</Link>
+                </aside>
+                <aside className='work'>
+                    <nav>
+                        <div className='icon'>
+                            <LayoutGrid/>
+                        </div>
+                        <h4>Web Application</h4>
+                    </nav>
+                    <nav>
+                        <div className="icon">
+                            <Rocket/>
+                        </div>
+                        <img src="" alt="" />
+                        <h4>SEO</h4>
+                    </nav>
+                    <nav>
+                        <div className="icon">
+                            <Smartphone/>
+                        </div>
+                        <h4>Mobile Application</h4>
+                    </nav>
+                    <nav>
+                        <div className="icon">
+                            <Cloud/>
+                        </div>
+                        <h4>AR/VR</h4>
+                    </nav>
+                </aside>
             </div>
         </main>
     )
