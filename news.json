@@ -1,0 +1,35 @@
+{
+    "Sport": [
+        {
+            "new1": "Sport is a good activity"
+        }, 
+        {
+            "new1": "Sport lorem ipsum"    
+        },
+        {
+            "new1": "lorem ipsum good bad"
+        }
+    ],
+    "Education": [
+        {
+            "new1": "Education is key for success"
+        },
+        {
+            "new1": "education hard difficult good"
+        },
+        {
+            "new1": "good good good"
+        }
+    ],
+    "Business": [
+        {
+            "new1":"business for strong people"
+        },
+        {
+            "new1": "bad bad bad"
+        },
+        {
+            "new1":"cool cool cool"
+        }
+    ]
+}
