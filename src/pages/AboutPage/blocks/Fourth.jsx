@@ -18,9 +18,9 @@ export default function FourthBlock(){
         pauseOnHover: false
     };
     useEffect(()=>{
-        fetch('data.json')
-            .then((response)=>response.json())
-            .then(dat=>setData(dat))
+        axios.get('data.json')
+        .then((res)=>setData(res.data))
+        .catch((e)=>alert("Error: ", e))
     },[])
     return(
         <main className='fourth_about'>
