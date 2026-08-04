@@ -28,7 +28,6 @@ function Subscribe() {
         e.preventDefault()
         const exists = dat.some(t => t.mail === mail)
         if(exists){
-
             setExist(true)
         }
         setModal(true)
@@ -45,6 +44,7 @@ function Subscribe() {
         setTimeout(()=>{
             setModal(false)
             setMail('')
+            setExist(false)
         },3000)
     }
 

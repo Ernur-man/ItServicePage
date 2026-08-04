@@ -10,7 +10,7 @@ function Footer(){
                     <p>@Lorem</p>
                 </nav>
                 <nav>
-                    <h3><a href="/about">About us</a></h3>
+                    <h3><a href="/mixProject/about">About us</a></h3>
                     <menu>
                         <li>Lorem</li>
                         <li>Portfolio</li>
@@ -19,7 +19,7 @@ function Footer(){
                     </menu>
                 </nav>
                 <nav>
-                    <h3><a href="/contact">Contact us</a></h3>
+                    <h3><a href="/mixProject/contact">Contact us</a></h3>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
                     <p>+908 89097 890</p>
                 </nav>
