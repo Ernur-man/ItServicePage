@@ -1,1 +1,0 @@
-import{j as s}from"./index-T0kmiRIo.js";function n(t){return s.jsx("main",{className:"postblock",children:s.jsx("div",{className:"container",children:s.jsx("h2",{children:t.text})})})}export{n as default};
