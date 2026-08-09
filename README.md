@@ -1,12 +1,45 @@
-# React + Vite
+# MixProject
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Full-stack React application with Express backend and MySQL database. Features carousel, image gallery, forms, and dynamic content management.
 
-Currently, two official plugins are available:
+## Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React 19 - frontend UI
+- React Router DOM - routing
+- Vite - build tool
+- Express.js - backend server
+- MySQL - database
+- Axios - HTTP requests
+- React Hook Form - form handling
+- React Slick - carousel
+- React Tabs - tab components
+- Lucide React - icons
+- React Countup - number animations
+- LightGallery - image gallery
+- Cors - cross-origin requests
+- Less - CSS preprocessor
+- ESLint - code linting
+- Gh-pages - deployment
 
-## Expanding the ESLint configuration
+## Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+src/
+  pages/
+  components/
+  hooks/
+  styles/
+server/
+  config/
+  routes/
+  controllers/
+dist/
+public/
+```
+
+## Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run deploy` - Deploy to GitHub Pages
