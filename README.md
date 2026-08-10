@@ -1,13 +1,12 @@
 # MixProject
 
-Full-stack React application with Express backend and MySQL database. Features carousel, image gallery, forms, and dynamic content management.
+ Features carousel, image gallery, forms, and dynamic content management.
 
 ## Stack
 
 - React 19 - frontend UI
 - React Router DOM - routing
 - Vite - build tool
-- Express.js - backend server
 - MySQL - database
 - Axios - HTTP requests
 - React Hook Form - form handling
@@ -18,7 +17,6 @@ Full-stack React application with Express backend and MySQL database. Features c
 - LightGallery - image gallery
 - Cors - cross-origin requests
 - Less - CSS preprocessor
-- ESLint - code linting
 - Gh-pages - deployment
 
 ## Structure
@@ -27,13 +25,6 @@ Full-stack React application with Express backend and MySQL database. Features c
 src/
   pages/
   components/
-  hooks/
-  styles/
-server/
-  config/
-  routes/
-  controllers/
-dist/
 public/
 ```
 
