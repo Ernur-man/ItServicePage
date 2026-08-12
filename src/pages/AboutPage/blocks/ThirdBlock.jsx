@@ -14,7 +14,7 @@ export default function ThirdBlock(){
                 <aside>
                     <h3>Lorem Ipsum is simply dummy text of the printing. </h3>
                     <p>KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web applications and website builders measuring dozens of completed projects.</p>
-                    <Link to='/mixProject/contact' className='btn'>Contact Us</Link>
+                    <Link to='/ItServicePage/contact' className='btn'>Contact Us</Link>
                 </aside>
                 <aside className='work'>
                     <nav>

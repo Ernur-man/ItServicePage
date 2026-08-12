@@ -10,13 +10,13 @@ function Header(){
     return (
         <header>
             <div className="container" >
-                <a href="/mixProject/"><img src={logo} alt="logo" loading="lazy"/></a>
+                <a href="/ItServicePage/"><img src={logo} alt="logo" loading="lazy"/></a>
                 <menu>
-                    <Link className="link" to="/mixProject/">Home</Link>
-                    <Link className="link" to="/mixProject/about">About us</Link>
-                    <Link className="link" to="/mixProject/services">Services</Link>
-                    <Link className="link" to="/mixProject/blog ">Blog</Link>
-                    <Link className="link" to="/mixProject/contact">Contact us</Link>
+                    <Link className="link" to="/ItServicePage/">Home</Link>
+                    <Link className="link" to="/ItServicePage/about">About us</Link>
+                    <Link className="link" to="/ItServicePage/services">Services</Link>
+                    <Link className="link" to="/ItServicePage/blog ">Blog</Link>
+                    <Link className="link" to="/ItServicePage/contact">Contact us</Link>
                 </menu>
             </div>
         </header>

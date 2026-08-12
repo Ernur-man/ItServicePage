@@ -1,6 +1,7 @@
-import './subscribe.less'
-import { useEffect, useState } from 'react'
-import axios from 'axios'
+import './subscribe.less';
+import { useEffect, useState } from 'react';
+import axios from 'axios';
+import ModalWindow from '../components/ModalWindow';
 
 function Subscribe() {
     const [mail, setMail] = useState('')
@@ -62,13 +63,7 @@ function Subscribe() {
                     />
                     <button onClick={checkMails}>Subscribe</button>
                 </form>
-                {
-                    modal && (
-                        <div style={styleModal} className='modal_error'>
-                            <h2>{exist ? 'Success' : 'Undefined'}</h2>
-                        </div>
-                    )
-                }
+                
             </div>
         </section>
     )

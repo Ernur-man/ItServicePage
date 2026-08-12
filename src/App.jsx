@@ -13,11 +13,11 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route path='/mixProject' element={<HomePage/>}/>
-        <Route path='/mixProject/about' element={<AboutPage/>}/>
-        <Route path='/mixProject/services' element={<ServicesPage/>}/>
-        <Route path='/mixProject/blog' element={<BlogPage/>}/>
-        <Route path='/mixProject/contact' element={<ContactPage/>}/>
+        <Route path='/ItServicePage' element={<HomePage/>}/>
+        <Route path='/ItServicePage/about' element={<AboutPage/>}/>
+        <Route path='/ItServicePage/services' element={<ServicesPage/>}/>
+        <Route path='/ItServicePage/blog' element={<BlogPage/>}/>
+        <Route path='/ItServicePage/contact' element={<ContactPage/>}/>
       </Routes>
       <Footer/>
     </>

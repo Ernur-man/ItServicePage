@@ -1,0 +1,26 @@
+@import '../reset.less';
+
+.message{
+    width: 200px;
+    padding: 20px;
+    position: absolute;
+    background: white;
+    top: 40px;
+    left: 0;
+    opacity: 0;
+}
+.message.active{
+    opacity: 1;
+    animation: messager 3s forwards;
+}
+
+
+@keyframes messager {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(100vw - 216px));
+    }
+}

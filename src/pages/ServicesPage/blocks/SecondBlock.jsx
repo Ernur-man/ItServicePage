@@ -16,7 +16,7 @@ export default function SecondBlock(){
                     <p>
                         KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web applications and website builders measuring dozens
                     </p>
-                    <Link to='/mixProject/contact' className='btn'>Contact Us</Link>
+                    <Link to='/ItServicePage/contact' className='btn'>Contact Us</Link>
                 </aside>
                 <aside>
                     <img src={work} alt="work" loading='lazy'/>

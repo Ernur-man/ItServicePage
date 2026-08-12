@@ -5,12 +5,12 @@ function Footer(){
         <footer>
             <div className="container">
                 <nav>
-                    <a href="/mixProject/"><img src={logo} alt="logo" loading='lazy'/></a>
+                    <a href="/ItServicePage/"><img src={logo} alt="logo" loading='lazy'/></a>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
                     <p>@Lorem</p>
                 </nav>
                 <nav>
-                    <h3><a href="/mixProject/about">About us</a></h3>
+                    <h3><a href="/ItServicePage/about">About us</a></h3>
                     <menu>
                         <li>Lorem</li>
                         <li>Portfolio</li>
@@ -19,7 +19,7 @@ function Footer(){
                     </menu>
                 </nav>
                 <nav>
-                    <h3><a href="/mixProject/contact">Contact us</a></h3>
+                    <h3><a href="/ItServicePage/contact">Contact us</a></h3>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
                     <p>+908 89097 890</p>
                 </nav>
